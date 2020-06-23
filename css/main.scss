@@ -14,6 +14,7 @@
 
 $black: #181818;
 $grey: #d9d9d9;
+$drk: #rgba(#4a4a4a, 0.47);
 $white: #E5E5E5;
 $red: #d72227;
 
@@ -55,7 +56,7 @@ body {
 .grid{
   justify-content: center;
 
-  width: 90%;
+  width: 95%;
   //*-- SCSS Grid Setup--*//
   @media screen and (min-width:$mobile) {
       display: grid;
@@ -159,7 +160,7 @@ body {
           position: absolute;
           top: 50%;
           left: 50%;
-
+          background-color: $drk;
           margin-top: 5px;
 
           transform: translate(-50%, -50%);
@@ -182,12 +183,13 @@ body {
   align-items: center;
   justify-content: center;
 
-  min-height: 100%;
+
 
   text-align: center;
 
   background: url("../media/reticulum.png") no-repeat center center fixed;
   background-size: cover;
+  min-height: 100%;
 }
 
   .overlay-wrap2{
