@@ -14,7 +14,7 @@
 
 $black: #181818;
 $grey: #d9d9d9;
-$drk: #rgba(#4a4a4a, 0.5);
+$drk: rgba(0, 0, 0, 0.64);
 $white: #E5E5E5;
 $red: #d72227;
 
@@ -120,7 +120,6 @@ body {
     display: inline-block;
     align-items: center;
     justify-content: center;
-
     text-align: center;
   }
 //}
@@ -155,7 +154,6 @@ body {
         display: inline-block;
         // background-image: url("media/virus-w-antibody.jpg");
         // background-size: contain;
-
         h2 {
           position: absolute;
           top: 50%;
@@ -302,7 +300,6 @@ h1{
   font-size: 4rem;
   font-weight: bold;
   line-height: 9rem;
-  // line-height: 143px;
 
   @media screen and (min-width:$tablet) {
     letter-spacing: 0.07em;
@@ -311,19 +308,21 @@ h1{
 
 h2{
   letter-spacing: 0.2em;
-
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
-  // background-color: $drk;
-  background: $drk;
+  background-color: $drk;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 h3{
   letter-spacing: 0.1em;
-
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 550;
+  background-color: $drk;
+  border-radius: 2rem;
+  padding: 1rem;
 }
 
 // Slider
@@ -387,7 +386,10 @@ h3{
 /* ––––––––––––—— */
 .text {
   position: absolute;
-  bottom: 8px;
+  // bottom: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   align-items: center;
 
@@ -395,11 +397,11 @@ h3{
   padding: 8px 12px;
 
   text-align: center;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 
   color: $white;
 
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 550;
 }
 
