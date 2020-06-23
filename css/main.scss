@@ -22,7 +22,7 @@ $red: #d72227;
 /* ––Viewport—— */
 /* –––––––—–––— */
 
-$mobile: 0px;
+$mobile: 100px;
 $tablet: 600px;
 $laptop: 900px;
 
@@ -54,44 +54,48 @@ body {
 }
 
 .grid{
-  justify-content: center;
+  // justify-content: center;
 
   width: 95%;
   //*-- SCSS Grid Setup--*//
-  @media screen and (min-width:$mobile) {
-      display: grid;
-
-      width: 100%;
-      max-width: 600px;
-      padding-right: 30px;
-      padding-left: 30px;
-
-      rows: repeat(7, 1fr);
-      grid-gap: 5px;
-  }
   @media screen and (min-width:$laptop) {
       display: grid;
-
+      // position: absolute;
+      // transform: translate(15%, 0%);
       width: 100%;
-      max-width: 900px;
+      max-width: 2100px;
       padding-left: 60px;
-
+      padding-right: 10px;
       grid-template-rows: repeat(7, 1fr);
       grid-gap: 10px;
       // padding-right: 60px;
   }
-  @media screen and (min-width:$tablet) {
-      display: grid;
-      // grid-gap: 5px;
+  // @media screen and (min-width:$tablet) {
+  //     display: grid;
+  //     // grid-gap: 5px;
+  //     width: 100%;
+  //     max-width: 1400px;
+  //     padding-right: 60px;
+  //     padding-left: 60px;
+  //     grid-template-rows: repeat(7s, 1fr);
+  // }
+  // @media screen and (min-width:$mobile) {
+  //     display: grid;
+  //
+  //     width: 100%;
+  //     max-width: 600px;
+  //     padding-right: 30px;
+  //     padding-left: 30px;
+  //
+  //     rows: repeat(7, 1fr);
+  //     grid-gap: 5px;
+  // }
 
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 60px;
-      padding-left: 60px;
+}
 
-      grid-template-rows: repeat(7s, 1fr);
-  }
-
+.section {
+  justify-content: flex-end;
+  align-content: center;
 }
 
 .text-wrap {
@@ -456,4 +460,18 @@ h3{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.graph {
+
+  h2 {
+
+    position: absolute;
+    align-content:center;
+    transform: translate(50%, -50%);
+  }
+
+  form {
+    transform: translate(50%, 50%);
+  }
 }

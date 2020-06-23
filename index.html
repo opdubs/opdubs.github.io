@@ -135,11 +135,22 @@
       <!-- <br /> -->
 
       <div class="graph">
-        <img src="" alt="" />
-        <button type="button" name="button">Pre-Clinical</button>
-        <button type="button" name="button">Phase 1</button>
-        <button type="button" name="button">Phase 2</button>
-        <button type="button" name="button">Phase 3</button>
+        <h2>Pipeline & Results</h2>
+        <!-- <img src="" alt="" /> -->
+        <!-- <button onclick="document.getElementsByClassName('graph1').src='media/graph1.png'">Pre-Clinical</button> -->
+        <img class="graphimg" src="media/graph1.png" style="width: 100%;">
+        <!-- <button onclick="document.getElementsByClassName('graph2').src='media/graph2.png'">Phase 1</button> -->
+        <!-- <img class="graph" src="media/graph2.png" style="width: 100%;"> -->
+        <!-- <button onclick="document.getElementsByClassName('graph3').src='media/graph3.png'">Phase 2</button> -->
+        <!-- <img class="graph" src="media/graph3.png" style="width: 100%;"> -->
+        <!-- <button onclick="document.getElementsByClassName('graph4').src='media/graph4.png'">Phase 3</button> -->
+        <!-- <img class="graph" src="media/graph4.png" style="width: 100%;"> -->
+        <form>
+          <input type="button" name="graph" value="Pre-Clinical" onclick="swap();">
+          <input type="button" name="graph" value="Phase 1" onclick="swap();">
+          <input type="button" name=graph"" value="Phase 2" onclick="swap();">
+          <input type="button" name="graph" value="Phase 3" onclick="swap();">
+        </form>
       </div>
       <div class="image"><img src="" alt="" /></div>
     </section>
