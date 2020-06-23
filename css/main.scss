@@ -473,15 +473,16 @@ h3{
     }
     form {
       // transform: translate(50%, 50%);
-      padding-top: 2.5rem;
       display: flex;
       align-items: center;
-      justify-content:space-between;
+      justify-content:center;
+      padding-top: 2.5rem;
       .button1 {
         background: linear-gradient(90deg, #0D0D58 7.34%, #161689 100%);
         border-radius: 1rem;
         color: white;
-        padding: 15px 32px;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -491,7 +492,8 @@ h3{
         background: linear-gradient(90deg, #161689 0.05%, #1919C5 100%);
         border-radius: 1rem;
         color: white;
-        padding: 15px 32px;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -501,7 +503,8 @@ h3{
         background: linear-gradient(90deg, #1919C5 0.11%, #298BE5 100%);
         border-radius: 1rem;
         color: white;
-        padding: 15px 32px;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -511,7 +514,8 @@ h3{
         background: linear-gradient(90deg, #298BE6 0.16%, #0D0D58 100%);
         border-radius: 1rem;
         color: white;
-        padding: 15px 32px;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
         text-align: center;
         text-decoration: none;
         display: inline-block;
