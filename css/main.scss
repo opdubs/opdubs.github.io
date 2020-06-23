@@ -193,9 +193,6 @@ h1{
   letter-spacing: 0.3em;
 
   @media screen and (min-width:$mobile) {
-    font-size: 2rem;
-  }
-  @media screen and (min-width:$tablet) {
     letter-spacing: 0.2em;
     font-size: 3.7rem;
   }
@@ -214,9 +211,6 @@ h2{
   background-color: $drk;
 
   @media screen and (min-width:$mobile) {
-    font-size: 1rem;
-  }
-  @media screen and (min-width:$tablet) {
     font-size: 2rem;
   }
 
@@ -234,9 +228,6 @@ h3{
   background-color: $drk;
 
   @media screen and (min-width:$mobile) {
-    font-size: 0.7rem;
-  }
-  @media screen and (min-width:$tablet) {
     font-size: 1rem;
   }
 
