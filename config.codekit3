@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/css/main.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/main.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/css/main.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -262,8 +272,8 @@
 	"creationDate": 614569569.28757095,
 	"displayValue": "opdubs.github.io",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_magenta",
-	"iconImageWasSetByUser": 0
+	"iconImageName": "brackets-payne",
+	"iconImageWasSetByUser": 1
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
