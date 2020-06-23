@@ -29,7 +29,9 @@ function showSlides(n) {
 
 var image_tracker = 'graph1';
 
-function swap() {
+function changeImg(imgName) {
+  image = document.getElementsByClassName('imgDisp');
+  image.src = imgName;
   // var graph1 = document.getElementsByClassName('graph1');
   //     graph1 = graph1.src;
   // var graph2 = document.getElementsByClassName('graph2');
@@ -38,22 +40,22 @@ function swap() {
   //     graph3 = graph3.src;
   // var graph4 = document.getElementsByClassName('graph4');
   //     graph4 = graph4.src;
-  var graph = document.getElementsByClassName('graphimg');
-  if(image_tracker=='graph1'){
-     graph.src= "../media/graph1.png";
-     image_tracker='graph1';
-     }
-     else if(image_tracker=='graph2'){
-     graph.src='../media/graph2.png';
-     image_tracker='graph2';
-     }
-     else if(image_tracker=='graph3'){
-     graph.src='../media/graph3';
-     image_tracker='graph3';
-     }
-     else if(image_tracker=='graph4'){
-     graph.src='../media/graph4';
-     image_tracker='graph4';
-     }
+  // var graph = document.getElementsByClassName('graphimg');
+  // if(image_tracker=='graph1'){
+  //    graph.src= "../media/graph1.png";
+  //    image_tracker='graph1';
+  //    }
+  //    else if(image_tracker=='graph2'){
+  //    graph.src='../media/graph2.png';
+  //    image_tracker='graph2';
+  //    }
+  //    else if(image_tracker=='graph3'){
+  //    graph.src='../media/graph3';
+  //    image_tracker='graph3';
+  //    }
+  //    else if(image_tracker=='graph4'){
+  //    graph.src='../media/graph4';
+  //    image_tracker='graph4';
+  //    }
 
 }

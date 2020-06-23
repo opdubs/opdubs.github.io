@@ -41,37 +41,40 @@ html {
 
 body {
     display: grid;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
 
     min-height: 100vh;
+
     background-image: radial-gradient(50% 50% at 50% 50%, #0D0D5E 11.98%, #141437 25.52%, #1A1A1C 64.06%, #343235 85.94%, #252425 100%);
 
     font-family: 'UberMoveBold', 'UberMoveMedium', 'UberMoveTextBold', 'UberMoveTextMedium', sans-serif;
     font-weight: 400;
-    justify-content: center;
-    align-items: center;
+
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
 }
 
 .section {
-  justify-content: center;
   //align-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .grid{
   // justify-content: center;
-
   width: 100%;
   //*-- SCSS Grid Setup--*//
   @media screen and (min-width:$laptop) {
       display: grid;
       // position: absolute;
       // transform: translate(15%, 0%);
+
       width: 100%;
       max-width: 1400px;
-      padding-left: 60px;
       padding-right: 10px;
+      padding-left: 60px;
+
       grid-template-rows: repeat(7, 1fr);
       grid-gap: 10px;
       // padding-right: 60px;
@@ -126,6 +129,7 @@ body {
     display: inline-block;
     align-items: center;
     justify-content: center;
+
     text-align: center;
   }
 //}
@@ -164,7 +168,9 @@ body {
           position: absolute;
           top: 50%;
           left: 50%;
+
           margin-top: 5px;
+
           transform: translate(-50%, -50%);
         }
 
@@ -185,13 +191,12 @@ body {
   align-items: center;
   justify-content: center;
 
-
+  min-height: 100%;
 
   text-align: center;
 
   background: url("../media/reticulum.png") no-repeat center center fixed;
   background-size: cover;
-  min-height: 100%;
 }
 
   .overlay-wrap2{
@@ -313,22 +318,28 @@ h1{
 }
 
 h2{
+  padding: 1rem;
+
   letter-spacing: 0.2em;
+
+  border-radius: 2rem;
+  background-color: $drk;
+
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 3rem;
-  background-color: $drk;
-  border-radius: 2rem;
-  padding: 1rem;
 }
 
 h3{
+  padding: 1rem;
+
   letter-spacing: 0.1em;
+
+  border-radius: 2rem;
+  background-color: $drk;
+
   font-size: 2rem;
   font-weight: 550;
-  background-color: $drk;
-  border-radius: 2rem;
-  padding: 1rem;
 }
 
 // Slider
@@ -395,13 +406,13 @@ h3{
   // bottom: 8px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   align-items: center;
 
   width: 100%;
   padding: 8px 12px;
 
+  transform: translate(-50%, -50%);
   text-align: center;
   letter-spacing: 0.2em;
 
@@ -469,6 +480,7 @@ h3{
   .graph {
     h2 {
       text-align: center;
+
       background-color: rgba(0, 0, 0, 0);
     }
     form {
@@ -476,49 +488,66 @@ h3{
       display: flex;
       align-items: center;
       justify-content:center;
+
       padding-top: 2.5rem;
       .button1 {
-        background: linear-gradient(90deg, #0D0D58 7.34%, #161689 100%);
-        border-radius: 1rem;
-        color: white;
-        padding: 1rem 2rem;
+        display: inline-block;
+
         margin-right: 1rem;
+        padding: 1rem 2rem;
+
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+
+        color: white;
+        border-radius: 1rem;
+        background: linear-gradient(90deg, #0D0D58 7.34%, #161689 100%);
+
         font-size: 16px;
       }
       .button2 {
-        background: linear-gradient(90deg, #161689 0.05%, #1919C5 100%);
-        border-radius: 1rem;
-        color: white;
-        padding: 1rem 2rem;
+        display: inline-block;
+
         margin-right: 1rem;
+        padding: 1rem 2rem;
+
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+
+        color: white;
+        border-radius: 1rem;
+        background: linear-gradient(90deg, #161689 0.05%, #1919C5 100%);
+
         font-size: 16px;
       }
       .button3 {
-        background: linear-gradient(90deg, #1919C5 0.11%, #298BE5 100%);
-        border-radius: 1rem;
-        color: white;
-        padding: 1rem 2rem;
+        display: inline-block;
+
         margin-right: 1rem;
+        padding: 1rem 2rem;
+
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+
+        color: white;
+        border-radius: 1rem;
+        background: linear-gradient(90deg, #1919C5 0.11%, #298BE5 100%);
+
         font-size: 16px;
       }
       .button4 {
-        background: linear-gradient(90deg, #298BE6 0.16%, #0D0D58 100%);
-        border-radius: 1rem;
-        color: white;
-        padding: 1rem 2rem;
+        display: inline-block;
+
         margin-right: 1rem;
+        padding: 1rem 2rem;
+
         text-align: center;
         text-decoration: none;
-        display: inline-block;
+
+        color: white;
+        border-radius: 1rem;
+        background: linear-gradient(90deg, #298BE6 0.16%, #0D0D58 100%);
+
         font-size: 16px;
       }
     }
