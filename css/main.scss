@@ -22,7 +22,7 @@ $red: #d72227;
 /* ––Viewport—— */
 /* –––––––—–––— */
 
-$mobile: 100px;
+$mobile: 0px;
 $tablet: 600px;
 $laptop: 900px;
 
@@ -45,14 +45,35 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.section {
-  //align-content: center;
-  align-items: center;
-  justify-content: center;
-}
+// .section {
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// }
 
 .grid{
   //*-- SCSS Grid Setup--*//
+  @media screen and (min-width:$mobile) {
+      display: grid;
+
+      width: 100%;
+      max-width: 1400px;
+      padding-right: 30px;
+      padding-left: 30px;
+
+      rows: repeat(7, 1fr);
+      grid-gap: 5px;
+      text-align: center;
+  }
+  @media screen and (min-width:$tablet) {
+      display: grid;
+      // grid-gap: 5px;
+      width: 100%;
+      max-width: 1400px;
+      padding-right: 45px;
+      padding-left: 45px;
+      grid-template-rows: repeat(7s, 1fr);
+  }
   @media screen and (min-width:$laptop) {
       display: grid;
       width: 100%;
@@ -64,26 +85,6 @@ body {
       grid-gap: 10px;
       // padding-right: 60px;
   }
-  @media screen and (min-width:$tablet) {
-      display: grid;
-      // grid-gap: 5px;
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 60px;
-      padding-left: 60px;
-      grid-template-rows: repeat(7s, 1fr);
-  }
-  @media screen and (min-width:$mobile) {
-      display: grid;
-
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 30px;
-      padding-left: 30px;
-
-      rows: repeat(7, 1fr);
-      grid-gap: 5px;
-  }
   width: 100%;
 
 }
@@ -91,14 +92,14 @@ body {
 
 .text-wrap {
     position: relative;
-
-    align-items:baseline;
-    justify-content: center;
+    // align-items:baseline;
+    // justify-content: center;
 
     min-height: 100%;
 
     text-align: center;
-    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
     background: url("../media/virus-no-bkgrd.png") no-repeat center center fixed;
     background-size: cover;
@@ -109,7 +110,16 @@ body {
     @media screen and (min-width:$mobile) {
       min-height: 50%;
     }
+    .title-wrap{
+      text-align: center;
+    }
+    .sub-wrap{
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
   }
+
 
   h1 {
     display: inline-block;
@@ -182,13 +192,17 @@ h1, h2, h3 {
 h1{
   letter-spacing: 0.3em;
 
+  @media screen and (min-width:$mobile) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width:$tablet) {
+    letter-spacing: 0.2em;
+    font-size: 3.7rem;
+  }
+
   font-size: 4rem;
   font-weight: bold;
   line-height: 9rem;
-
-  @media screen and (min-width:$tablet) {
-    letter-spacing: 0.07em;
-  }
 }
 
 h2{
@@ -198,6 +212,13 @@ h2{
 
   border-radius: 2rem;
   background-color: $drk;
+
+  @media screen and (min-width:$mobile) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width:$tablet) {
+    font-size: 2rem;
+  }
 
   font-size: 2.5rem;
   font-weight: 600;
@@ -211,6 +232,13 @@ h3{
 
   border-radius: 2rem;
   background-color: $drk;
+
+  @media screen and (min-width:$mobile) {
+    font-size: 0.7rem;
+  }
+  @media screen and (min-width:$tablet) {
+    font-size: 1rem;
+  }
 
   font-size: 2rem;
   font-weight: 550;
@@ -282,7 +310,7 @@ h3{
   align-items: center;
 
   width: 100%;
-  padding: 8px 12px;
+  padding: 1rem 1.1rem;
 
   transform: translate(-50%, -50%);
   text-align: center;
