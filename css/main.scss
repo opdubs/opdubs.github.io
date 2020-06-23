@@ -56,7 +56,7 @@ body {
 .grid{
   // justify-content: center;
 
-  width: 95%;
+  width: 100%;
   //*-- SCSS Grid Setup--*//
   @media screen and (min-width:$laptop) {
       display: grid;
@@ -465,10 +465,9 @@ h3{
 .graph {
 
   h2 {
-
-    position: absolute;
-    align-content:center;
-    transform: translate(50%, -50%);
+    display:block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   form {
