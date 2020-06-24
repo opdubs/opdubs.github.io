@@ -31,5 +31,8 @@ function showSlides(n) {
 function changeImg(imgName) {
   //document.getElementsByClassName('imgDisp').src = imgName;
   var image = document.getElementsByClassName("imgDisp");
-  image.src = imgName;
+  for (var i = 0; i < image.length; i+= 1) {
+    image[i].src = imgName;
+  }
+  // image.src = imgName;
 }
