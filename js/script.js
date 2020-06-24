@@ -34,5 +34,4 @@ function changeImg(imgName) {
   for (var i = 0; i < image.length; i+= 1) {
     image[i].src = imgName;
   }
-  // image.src = imgName;
 }
