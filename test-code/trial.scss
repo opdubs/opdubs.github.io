@@ -249,7 +249,7 @@ h3{
   position: relative;
 
   max-width: 1000px;
-  margin: auto;
+  margin: 1rem;
 }
 
 /* Hide the images by default */
@@ -265,7 +265,7 @@ h3{
 
 /* Next & previous buttons */
 .prev, .next {
-  position: absolute;
+  position: relative;
   top: 50%;
 
   width: auto;
@@ -299,9 +299,9 @@ h3{
 /* –Caption text– */
 /* ––––––––––––—— */
 .text {
-  position: absolute;
+  position:absolute;
   // bottom: 8px;
-  top: 50%;
+  top: 15%;
   left: 50%;
 
   align-items: center;
@@ -378,6 +378,16 @@ h3{
   align-items: stretch;
   padding-right: 3.5rem;
   .graph {
+    .graph-container {
+      .active {
+        opacity: 1;
+        tansition:opacity 0.3s linear;
+      }
+      img{
+        opacity: 0;
+        tansition:opacity 0.3s linear;
+      }
+    }
     h2 {
       text-align: center;
 

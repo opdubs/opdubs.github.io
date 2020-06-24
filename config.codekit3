@@ -129,10 +129,10 @@
 		"oA": 0,
 		"oAP": "/media/antibodies.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/bacteria.jpg": {
 		"ft": 16384,
@@ -141,9 +141,9 @@
 		"oA": 0,
 		"oAP": "/media/bacteria.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oIPL": 1,
+		"opt": 1,
+		"q": 75
 		},
 	"/media/corona virus.jpg": {
 		"ft": 16384,
@@ -173,10 +173,10 @@
 		"oA": 0,
 		"oAP": "/media/COVID-19 Virus.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/graph1.png": {
 		"ft": 32768,
@@ -184,10 +184,10 @@
 		"oA": 0,
 		"oAP": "/media/graph1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/graph2.png": {
 		"ft": 32768,
@@ -195,10 +195,10 @@
 		"oA": 0,
 		"oAP": "/media/graph2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/graph3.png": {
 		"ft": 32768,
@@ -206,10 +206,10 @@
 		"oA": 0,
 		"oAP": "/media/graph3.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/graph4.png": {
 		"ft": 32768,
@@ -217,10 +217,10 @@
 		"oA": 0,
 		"oAP": "/media/graph4.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/measles virus.jpg": {
 		"ft": 16384,
@@ -239,10 +239,10 @@
 		"oA": 0,
 		"oAP": "/media/reticulum.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/virus-no-bkgrd.png": {
 		"ft": 32768,
@@ -250,10 +250,10 @@
 		"oA": 0,
 		"oAP": "/media/virus-no-bkgrd.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/virus-w-antibody.jpg": {
 		"ft": 16384,
@@ -272,10 +272,10 @@
 		"oA": 0,
 		"oAP": "/media/virus-w-antibody.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
+		"q": 75
 		},
 	"/media/viruses.jpg": {
 		"ft": 16384,
@@ -306,6 +306,38 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/test-code/trial.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test-code/trial.html",
+		"oF": 0
+		},
+	"/test-code/trial.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/test-code/trial-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/test-code/trial.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/test-code/trial.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		}
 	},
 "hooks": [

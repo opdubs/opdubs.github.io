@@ -132,19 +132,56 @@
           <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-      <div class="graph-wrapper">
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- <div class="graph-wrapper">
         <div class="graph">
           <h2>Pipeline & Results</h2>
-          <img class="imgDisp fade" src="media/graph1.png" style="width: 100%;">
+          <!- <img class="imgDisp" src="media/graph1.png" style="width: 100%;"> -->
+          <!-- <div class="graph-container">
+            <img class="active graph1" src="media/graph1.png" style="width: 100%;">
+            <img class="graph2" src="media/graph2.png" style="width: 100%;">
+            <img class="graph3" src="media/graph3.png" style="width: 100%;">
+            <img class="graph4" src="media/graph4.png" style="width: 100%;">
+          </div>
           <form>
-            <button class="button1" onclick="changeImg('../media/graph1.png');">Pre-Clinical</button>
-            <button class="button2"  onclick="changeImg('../media/graph2.png');">Phase 1</button>
-            <button class="button3" onclick="changeImg('../media/graph3.png');">Phase 2</button>
-            <button class="button4" onclick="changeImg('../media/graph4.png');">Phase 3</button>
+            <button class="button1" onclick="changeImg('graph1');">Pre-Clinical</button>
+            <button class="button2"  onclick="changeImg('graph2');">Phase 1</button>
+            <button class="button3" onclick="changeImg('graph3');">Phase 2</button>
+            <button class="button4" onclick="changeImg('graph4');">Phase 3</button>
           </form>
         </div>
+    </div> -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+  <div class="graph-wrapper">
+    <div class="graph">
+      <h2>Pipeline & Results</h2>
+      <div class="graph-container">
+        <div class="myGraph fade">
+          <img src="media/graph1.png" style="width: 100%;">
+        </div>
+        <div class="myGraph fade">
+          <img src="media/graph2.png" style="width: 100%;">
+        </div>
+        <div class="myGraph fade">
+          <img src="media/graph3.png" style="width: 100%;">
+        </div>
+        <div class="myGraph fade">
+          <img src="media/graph4.png" style="width: 100%;">
+        </div>
+      </div>
     </div>
-      <div class="image"><img src="" alt="" /></div>
+  </div>
+    <form>
+      <button class="button1" onclick="changeImg('graph1');">Pre-Clinical</button>
+      <button class="button2"  onclick="changeImg('graph2');">Phase 1</button>
+      <button class="button3" onclick="changeImg('graph3');">Phase 2</button>
+      <button class="button4" onclick="changeImg('graph4');">Phase 3</button>
+    </form>
+  </div>
     </section>
     <script src="js/script.js"></script>
   </body>
