@@ -2,20 +2,18 @@
 /* Imports */
 /* ––––––– */
 
-@import 'resets.scss';
+@import "resets.scss";
 
 /* –––––––—— */
 /* Variables */
 /* –––––––—— */
 
-
 /* Colour */
-
 
 $black: #181818;
 $grey: #d9d9d9;
 $drk: rgba(0, 0, 0, 0.64);
-$white: #E5E5E5;
+$white: #e5e5e5;
 $red: #d72227;
 
 /* ––––––––––—— */
@@ -30,19 +28,27 @@ html {
 }
 
 body {
-    display: grid;
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
+  display: grid;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
 
-    min-height: 100vh;
+  min-height: 100vh;
 
-    background-image: radial-gradient(50% 50% at 50% 50%, #0D0D5E 11.98%, #141437 25.52%, #1A1A1C 64.06%, #343235 85.94%, #252425 100%);
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #0d0d5e 11.98%,
+    #141437 25.52%,
+    #1a1a1c 64.06%,
+    #343235 85.94%,
+    #252425 100%
+  );
 
-    font-family: 'UberMoveBold', 'UberMoveMedium', 'UberMoveTextBold', 'UberMoveTextMedium', sans-serif;
-    font-weight: 400;
+  font-family: "UberMoveBold", "UberMoveMedium", "UberMoveTextBold",
+    "UberMoveTextMedium", sans-serif;
+  font-weight: 400;
 
-    -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 // .section {
@@ -51,103 +57,100 @@ body {
 // justify-content: center;
 // }
 
-.grid{
+.grid {
   width: 100%;
   //*-- SCSS Grid Setup--*//
-  @media screen and (min-width:$mobile) {
-      display: grid;
+  @media screen and (min-width: $mobile) {
+    display: grid;
 
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 30px;
-      padding-left: 30px;
+    width: 100%;
+    max-width: 1400px;
+    padding-right: 30px;
+    padding-left: 30px;
 
-      text-align: center;
+    text-align: center;
 
-      rows: repeat(7, 1fr);
-      grid-gap: 5px;
+    rows: repeat(6, 1fr);
+    grid-gap: 5px;
   }
-  @media screen and (min-width:$tablet) {
-      display: grid;
-      // grid-gap: 5px;
+  @media screen and (min-width: $tablet) {
+    display: grid;
+    // grid-gap: 5px;
 
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 45px;
-      padding-left: 45px;
+    width: 100%;
+    max-width: 1400px;
+    padding-right: 45px;
+    padding-left: 45px;
 
-      grid-template-rows: repeat(7s, 1fr);
+    grid-template-rows: repeat(6s, 1fr);
   }
-  @media screen and (min-width:$laptop) {
-      display: grid;
+  @media screen and (min-width: $laptop) {
+    display: grid;
 
-      width: 100%;
-      max-width: 1400px;
-      padding-right: 10px;
-      padding-left: 60px;
+    width: 100%;
+    max-width: 1400px;
+    padding-right: 10px;
+    padding-left: 60px;
 
-      grid-template-rows: repeat(7, 1fr);
-      grid-gap: 10px;
-      // padding-right: 60px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+    // padding-right: 60px;
   }
-
 }
 
-
 .text-wrap {
-    position: relative;
-    // align-items:baseline;
-    // justify-content: center;
+  position: relative;
+  // align-items:baseline;
+  // justify-content: center;
 
-    min-height: 100%;
-    margin-right: 1rem;
-    margin-left: 1rem;
+  min-height: 100%;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
-    text-align: center;
+  text-align: center;
 
-    background: url("../media/virus-no-bkgrd.png") no-repeat center center fixed;
-    background-size: cover;
+  background: url("../media/virus-no-bkgrd.png") no-repeat center center fixed;
+  background-size: cover;
 
-    @media screen and (min-width:$tablet) {
-      min-height: 70%;
-    }
-    @media screen and (min-width:$mobile) {
-      min-height: 50%;
-    }
-    .title-wrap{
-      text-align: center;
-    }
-    .sub-wrap{
-      display: flex;
-      align-items: center;
-
-      text-align: center;
-    }
+  @media screen and (min-width: $tablet) {
+    min-height: 70%;
   }
-
-
-  h1 {
-    display: inline-block;
+  @media screen and (min-width: $mobile) {
+    min-height: 50%;
+  }
+  .title-wrap {
+    text-align: center;
+  }
+  .sub-wrap {
+    display: flex;
     align-items: center;
-    justify-content: center;
 
     text-align: center;
   }
-    .overlay {
-        display: inline-block;
+}
 
-        h2 {
-          position: absolute;
-          top: 50%;
-          left: 50%;
+h1 {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
 
-          margin-top: 5px;
+  text-align: center;
+}
+.overlay {
+  display: inline-block;
 
-          transform: translate(-50%, -50%);
-        }
-    }
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  .overlay-wrap1{
+    margin-top: 5px;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.overlay-wrap1 {
   position: relative;
 
   align-items: center;
@@ -161,7 +164,7 @@ body {
   background-size: cover;
 }
 
-  .overlay-wrap2{
+.overlay-wrap2 {
   position: relative;
 
   align-items: center;
@@ -175,8 +178,7 @@ body {
   background-size: cover;
 }
 
-
-  .overlay-wrap3{
+.overlay-wrap3 {
   position: relative;
 
   align-items: center;
@@ -190,27 +192,33 @@ body {
   background-size: cover;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: $grey;
 }
 
-h1{
-  letter-spacing: 0.3em;
-
-  font-size: 4rem;
+h1 {
   font-weight: bold;
   line-height: 9rem;
 
-  @media screen and (min-width:$mobile) {
-    letter-spacing: 0.2em;
+  @media screen and (min-width: $mobile) {
+    letter-spacing: 0.25em;
 
-    font-size: 3.7rem;
+    font-size: 3.3rem;
+  }
+
+  @media screen and (min-width: $laptop) {
+    letter-spacing: 0.3em;
+
+    font-size: 4rem;
   }
 }
 
-h2{
+h2 {
+  // margin-left: 1rem;
   padding: 1rem;
-  margin-left: 1rem;
+
   letter-spacing: 0.2em;
 
   border-radius: 2rem;
@@ -220,29 +228,31 @@ h2{
   font-weight: 600;
   line-height: 3rem;
 
-  @media screen and (min-width:$mobile) {
+  @media screen and (min-width: $mobile) {
     font-size: 2rem;
   }
 }
 
-h3{
+h3 {
   padding: 1rem;
 
   letter-spacing: 0.1em;
 
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   background-color: $drk;
 
   font-size: 2rem;
   font-weight: 550;
 
-  @media screen and (min-width:$mobile) {
+  @media screen and (min-width: $mobile) {
     font-size: 1rem;
   }
 }
 
 // Slider
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -258,13 +268,14 @@ h3{
 
   img {
     .img-rotate {
-    transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
-   }
+  }
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
 
@@ -297,8 +308,9 @@ h3{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* ––––––––––––—— */
@@ -356,7 +368,8 @@ h3{
   margin: 1rem;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -369,93 +382,105 @@ h3{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .graph-wrapper {
   position: relative;
-  justify-content: center;
+
   align-items: stretch;
+  justify-content: center;
+
   padding-right: 3.5rem;
+  padding-bottom: 2.5rem;
   .graph {
     h2 {
       text-align: center;
 
       background-color: rgba(0, 0, 0, 0);
     }
-    form {
-      // transform: translate(50%, 50%);
-      display: flex;
-      align-items: center;
-      justify-content:center;
+  }
+  form {
+    // transform: translate(50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 
-      padding-top: 2.5rem;
-      .button1 {
-        display: inline-block;
+    padding-top: 2.5rem;
+    .button1 {
+      // display: inline-block;
 
-        margin-right: 1rem;
-        padding: 1rem 2rem;
+      margin-right: .5rem;
+      padding: 1rem 1rem;
 
-        text-align: center;
-        text-decoration: none;
+      text-align: center;
+      text-decoration: none;
 
-        color: white;
-        border-radius: 1rem;
-        background: linear-gradient(90deg, #0D0D58 7.34%, #161689 100%);
+      color: white;
+      border-radius: 1rem;
+      background: linear-gradient(90deg, #0d0d58 7.34%, #161689 100%);
 
-        font-size: 16px;
-      }
-      .button2 {
-        display: inline-block;
+      font-size: .9rem;
+    }
+    .button2 {
+      // display: inline-block;
 
-        margin-right: 1rem;
-        padding: 1rem 2rem;
+      margin-right: .5rem;
+      padding: 1rem 1rem;
 
-        text-align: center;
-        text-decoration: none;
+      text-align: center;
+      text-decoration: none;
 
-        color: white;
-        border-radius: 1rem;
-        background: linear-gradient(90deg, #161689 0.05%, #1919C5 100%);
+      color: white;
+      border-radius: 1rem;
+      background: linear-gradient(90deg, #161689 0.05%, #1919c5 100%);
 
-        font-size: 16px;
-      }
-      .button3 {
-        display: inline-block;
+      font-size: .9rem;
+    }
+    .button3 {
+      // display: inline-block;
 
-        margin-right: 1rem;
-        padding: 1rem 2rem;
+      margin-right: .5rem;
+      padding: 1rem 1rem;
 
-        text-align: center;
-        text-decoration: none;
+      text-align: center;
+      text-decoration: none;
 
-        color: white;
-        border-radius: 1rem;
-        background: linear-gradient(90deg, #1919C5 0.11%, #298BE5 100%);
+      color: white;
+      border-radius: 1rem;
+      background: linear-gradient(90deg, #1919c5 0.11%, #298be5 100%);
 
-        font-size: 16px;
-      }
-      .button4 {
-        display: inline-block;
+      font-size: .9rem;
+    }
+    .button4 {
+      // display: inline-block;
 
-        margin-right: 1rem;
-        padding: 1rem 2rem;
+      margin-right: .5rem;
+      padding: 1rem 1rem;
 
-        text-align: center;
-        text-decoration: none;
+      text-align: center;
+      text-decoration: none;
 
-        color: white;
-        border-radius: 1rem;
-        background: linear-gradient(90deg, #298BE6 0.16%, #0D0D58 100%);
+      color: white;
+      border-radius: 1rem;
+      background: linear-gradient(90deg, #298be6 0.16%, #0d0d58 100%);
 
-        font-size: 16px;
-      }
+      font-size: .9rem;
     }
   }
 }

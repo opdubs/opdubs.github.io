@@ -33,3 +33,18 @@ function changeImg(imgName) {
   var image = document.getElementsByClassName("imgDisp")
   image.src = imgName;
 }
+
+// function changeImg()
+// {
+//     var inputs = document.myform;
+//     for(var i = 0; i < inputs.length; i++) {
+//         inputs[i].disabled = false;
+//     }
+//
+//     var edit_save = document.getElementById("edit-save");
+//
+//        edit_save.src = "../template/save.png";
+// }
+//
+//
+//

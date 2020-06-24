@@ -44,28 +44,23 @@ function changeImg(imgName) {
 var graphIndex = 1;
 showGraph(graphIndex);
 
-// Next/previous controls
-function plusGraph(n) {
-  showGraph(graphIndex += n);
+// Graph Image Associated w Button
+function nextGraph(n) {
+  showGraph(graphIndex == n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+function currentGraph(n) {
   showGraph(graphIndex = n);
 }
 
 function showGraph(n) {
   var i;
-  var graphs = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var graphs = document.getElementsByClassName("myGraphs");
   if (n > graphs.length) {graphIndex = 1}
   if (n < 1) {graphIndex = graphs.length}
   for (i = 0; i < graphs.length; i++) {
       graphs[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
   graphs[graphIndex-1].style.display = "block";
-  dots[graphIndex-1].className += " active";
 }
