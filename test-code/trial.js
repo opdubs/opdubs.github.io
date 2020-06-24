@@ -64,3 +64,25 @@ function showGraph(n) {
   }
   graphs[graphIndex-1].style.display = "block";
 }
+
+// JQuery?
+
+
+let graph = document.getElementsByClassName('imgDisp');
+let btn1 = document.getElementsByClassName('button1');
+let btn2 = document.getElementsByClassName('button2');
+let btn3 = document.getElementsByClassName('button3');
+let btn4 = document.getElementsByClassName('button4');
+
+btn1.addEventListener('click', () => {
+  graph.src = 'media/graph1.png';
+})
+btn2.addEventListener('click', () => {
+  graph.src = 'media/graph2.png';
+})
+btn3.addEventListener('click', () => {
+  graph.src = 'media/graph3.png';
+})
+btn4.addEventListener('click', () => {
+  graph.src = 'media/graph4.png';
+})

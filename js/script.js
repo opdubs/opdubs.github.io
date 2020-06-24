@@ -30,6 +30,6 @@ function showSlides(n) {
 
 function changeImg(imgName) {
   //document.getElementsByClassName('imgDisp').src = imgName;
-  var image = document.getElementsByClassName("imgDisp")
+  var image = document.getElementsByClassName('imgDisp');
   image.src = imgName;
 }
