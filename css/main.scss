@@ -210,7 +210,7 @@ h1{
 
 h2{
   padding: 1rem;
-
+  margin-left: 1rem;
   letter-spacing: 0.2em;
 
   border-radius: 2rem;
@@ -286,6 +286,12 @@ h3{
 /* Position the "next button" to the right */
 .next {
   right: 0;
+
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
 
   border-radius: 3px 0 0 3px;
 }
@@ -373,7 +379,7 @@ h3{
 }
 
 .graph-wrapper {
-  display: flex;
+  position: relative;
   justify-content: center;
   align-items: stretch;
   padding-right: 3.5rem;

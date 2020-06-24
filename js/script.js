@@ -27,9 +27,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-var image_tracker = 'graph1';
 
 function changeImg(imgName) {
-  image = document.getElementsByClassName('imgDisp');
+  //document.getElementsByClassName('imgDisp').src = imgName;
+  var image = document.getElementsByClassName("imgDisp")
   image.src = imgName;
 }
