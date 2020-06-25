@@ -229,7 +229,13 @@ h2 {
   line-height: 3rem;
 
   @media screen and (min-width: $mobile) {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    margin: 1rem;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 1.9rem;
+    margin: 1rem;
   }
 }
 
