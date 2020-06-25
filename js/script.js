@@ -29,9 +29,9 @@ function showSlides(n) {
 
 
 function changeImg(imgName) {
-  //document.getElementsByClassName('imgDisp').src = imgName;
   var image = document.getElementsByClassName("imgDisp");
   for (var i = 0; i < image.length; i++) {
     image[i].src = imgName;
+    document.getElementsByClassName("imgDisp") == image[i];
   }
 }
